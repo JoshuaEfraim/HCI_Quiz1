@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="image.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>ImageGallery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".toggle").click(function(){
+    var Target = $(this).data("target");
+    $("." + Target).toggle()
+  });
+});
+</script>
+</head>
+<body>
+    <div class="card">
+        <h1>Portfolio</h1>
+        <h3>Here are projects that I have done,
+            Click to show and hide</h3>
+        <li class="toggle" data-target="HCI">HCI</li>
+        <li class="toggle" data-target="TA">TA</li>
+        <li class="toggle" data-target="Algoprog">Algoprog</li>
+    </div>
+    <div class="gallery">
+        <div class="HCI">
+            <a href="https://github.com/JoshuaEfraim/HCI_Assignment1"><h3>https://github.com/JoshuaEfraim/HCI_Assignment1</h3></a>
+            <a href="https://github.com/JoshuaEfraim/HCI_Assignment2"><h3>https://github.com/JoshuaEfraim/HCI_Assignment2</h3></a>
+            <a href="https://github.com/JoshuaEfraim/HCI_Assignment5"><h3>https://github.com/JoshuaEfraim/HCI_Assignment5</h3></a>
+        </div>
+        <div class="TA">
+            <a href="https://github.com/JoshuaEfraim/TA_OOP"><h3>https://github.com/JoshuaEfraim/TA_OOP</h3></a>
+            <a href="https://github.com/JoshuaEfraim/TA-session-HouseClass"><h3>https://github.com/JoshuaEfraim/TA-session-HouseClass</h3></a>
+        </div>
+        <div class="Algoprog">
+            <a href="https://github.com/JoshuaEfraim/AlgoProgForumWeek6<"><h3>https://github.com/JoshuaEfraim/AlgoProgForumWeek6</h3></a>
+        </div>
+    </div>
+</body>
+</html>
